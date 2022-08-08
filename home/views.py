@@ -80,7 +80,7 @@ def analyze(request):
         djtext = analyzed
 
     if(removepunc != 'on' and fullcaps != "on" and newlineremove != "on" and extraspaceremove != "on" and charcount != "on"):
-        return HttpResponse("Please select the operation to be performed -++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++99999999999999999999999999999999*-!")
+        return HttpResponse("Please select the operation to be performed")
 
     return render(request, 'analyze.html', params)
 
